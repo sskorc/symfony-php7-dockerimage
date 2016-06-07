@@ -8,3 +8,6 @@ RUN apt-get update \
 
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/bin/composer
+
+RUN curl "http://www.phing.info/get/phing-latest.phar" -o /usr/bin/phing \
+    && chmod +x /usr/bin/phing
